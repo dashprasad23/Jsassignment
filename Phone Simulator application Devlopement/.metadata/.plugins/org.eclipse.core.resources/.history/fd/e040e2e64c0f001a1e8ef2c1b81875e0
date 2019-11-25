@@ -1,0 +1,11 @@
+package com.tyss.phonesimulator.dao;
+
+import com.tyss.phonesimulator.dto.ContactBean;
+
+public interface ContactDao3 {
+	public int add(ContactBean bean);
+	public int delete(ContactBean bean);
+	public int edit(ContactBean bean);
+	
+
+}

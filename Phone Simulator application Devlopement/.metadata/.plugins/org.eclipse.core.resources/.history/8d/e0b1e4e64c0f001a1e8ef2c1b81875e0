@@ -1,0 +1,33 @@
+package com.tyss.phonesimulator.app;
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.tyss.phonesimulator.dao.ContactDaoImpl;
+import com.tyss.phonesimulator.dto.ContactBean;
+import com.tyss.phonesimulator.util.ContactInfo;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.println("Press 1 to show all contacts");
+		System.out.println("Press 2 to search for contact");
+		System.out.println("press 3 to operate on contact");
+		int a=s.nextInt();
+		if(a==1)
+		{
+			ContactDaoImpl c1=ContactInfo.getContact1Obj();
+			List<ContactBean> li=c1.display();
+			for(ContactBean i:li)
+			{
+				System.out.println("Contact name is: "+i.getName());
+				System.out.println("Contact number is: "+i.getNumber());
+				System.out.println("Contact Group is: "+i.getGroup());
+				System.out.println("_______________________________________________");
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.tyss.phonesimulator.dao;
+
+import com.tyss.phonesimulator.dto.ContactBean;
+
+public class ContactDaoImpl3 implements ContactDao3{
+
+	@Override
+	public int add(ContactBean bean) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int delete(ContactBean bean) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int edit(ContactBean bean) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

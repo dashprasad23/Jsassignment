@@ -1,0 +1,25 @@
+package com.tyss.phonesimulator.dao;
+
+import java.util.List;
+
+public class ContactDaoImpl2 implements ContactDao2 {
+
+	@Override
+	public List<Integer> call() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void message() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mainManu() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
