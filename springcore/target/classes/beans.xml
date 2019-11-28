@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--<bean id="hello" class="com.tyss.springcore.di.Hellow" scope="prototype">  -->
+    <bean id="hellow" class="com.tyss.springcore.di.Hellow" init-method="init" destroy-method="destroy">
+    <property name="message" value="I love JS"/>
+    <property  name="map">
+    <map>
+    <entry key="one" value="1"/>
+    <entry key="two" value="2"/>
+    </map>
+    </property>
+    </bean>
+    <bean id="dog" class="com.tyss.springcore.di.Dog" primary="true"/>
+    <bean id="human" class="com.tyss.springcore.di.Human" />
+    <bean id="animal" class="com.tyss.springcore.di.Cat"/>
+    
+    <bean id="pet" class="com.tyss.springcore.di.Pet" autowire="byName">
+    <property name="name" value="kb"/>
+    <!-- property name="animal" ref="dog"/-->
+    <!-- <constructor-arg name="name" value="kb"/> -->
+    <!-- <constructor-arg name="animal" value="dog"/> -->
+    </bean>
+    <bean id="beanpostprocess" class="com.tyss.springcore.di.BeanPostProcesserClass"></bean>
+    <bean id="beanFactoryPostProcesser" class="com.tyss.springcore.di.BeanFactoryPostProcesserClass"/>
+</beans> 
