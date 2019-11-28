@@ -1,0 +1,10 @@
+package com.Ty.abstraction.ATMmachine;
+
+public class Machine {
+	void slot(ATM a)
+	{
+		a.validateCard();
+		a.getInfo();
+	}
+
+}

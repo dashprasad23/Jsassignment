@@ -1,0 +1,4 @@
+110,Anushka,100000,F
+111,Avinab,90000,M
+112,Suresh,8000,M
+113,Divya,300000,M
