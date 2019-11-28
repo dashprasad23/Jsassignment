@@ -1,0 +1,17 @@
+<div class="col-md-4 float-left card card-body">
+    <div class="card card-body" *ngFor="let lap of laps">
+        <img src="{{lap.imgUrl}}" alt="" (click)="sendlaps(lap)">
+        <h1>
+            {{
+                lap.name
+            }}
+        </h1>
+        <p>
+            {{lap.about}}
+        </p>
+
+    </div>
+
+
+</div>
+<app-child3 [laps]="selectedlap"></app-child3>

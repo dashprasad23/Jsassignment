@@ -1,0 +1,17 @@
+<div class="col-md-4 float-left crd card-body">
+    <div class="card card-body" *ngFor="let jet of Jets">
+        <img src="{{jet.imgUrl}}" alt="" (click)="sendJet(jet)">
+        <h1>
+            {{
+                jet.name
+            }}
+        </h1>
+        <p>
+            {{jet.about}}
+        </p>
+
+    </div>
+
+
+</div>
+<app-child [Jets]="selectedJet"></app-child>

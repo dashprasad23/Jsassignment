@@ -1,0 +1,17 @@
+<div class="col-md-4 float-left crd card-body">
+        <div class="card card-body" *ngFor="let hel of hels">
+            <img src="{{hel.imgUrl}}" alt="" (click)="sendhels(hel)">
+            <h1>
+                {{
+                    hel.name
+                }}
+            </h1>
+            <p>
+                {{hel.about}}
+            </p>
+    
+        </div>
+    
+    
+    </div>
+    <app-child1 [hels]="selectedhels"></app-child1>
