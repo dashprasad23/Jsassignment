@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+entitygen.DEFAULT_PACKAGE=model
+problem.TYPE_MANAGED_BUT_NOT_LISTED_IN_PERSISTENCE_XML=warning
+workspace_validation_preferences_overridden=true
